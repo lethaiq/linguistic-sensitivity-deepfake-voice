@@ -67,8 +67,10 @@
     <script src="static/js/bulma-carousel.min.js"></script>
     <script src="static/js/bulma-slider.min.js"></script>
     <script src="static/js/index.js"></script>
+
   </head>
   <body>
+    <!-- Title, and authors -->
     <section class="hero">
       <div class="hero-body">
         <div class="container is-max-desktop">
@@ -163,6 +165,7 @@
       </div>
     </section>
 
+    <!-- Motivation Figure -->
     <section class="hero teaser">
       <div class="container is-max-desktop">
         <div class="hero-body">
@@ -178,7 +181,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
-            <h2 class="title is-3">Abstract</h2>
+            <h2 class="title is-3 has-text-centered has-text-link">Abstract</h2>
             <div class="content has-text-justified">
               <p>
                 Recent advances in text-to-speech technologies have enabled
@@ -210,414 +213,259 @@
         </div>
       </div>
     </section>
-
-    <section class="section hero">
-      <div class="hero-body is-centered has-text-centered">
-        <h2 class="title is-3">
-          Open-Source Anti-Spoofing Detector Performance Results
-        </h2>
-        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
-          <thead>
-            <tr class="has-background-primary has-text-white">
-              <th rowspan="2" class="has-text-centered">Text-to-Speech</th>
-              <th colspan="4" class="has-text-centered">AASIST-2</th>
-              <th colspan="4" class="has-text-centered">CLAD</th>
-              <th colspan="4" class="has-text-centered">RawNet-2</th>
-            </tr>
-            <tr class="has-background-primary has-text-white">
-              <th class="has-text-centered">OC↑</th>
-              <th class="has-text-centered">AUA↓</th>
-              <th class="has-text-centered">ASR↑</th>
-              <th class="has-text-centered">COS↑</th>
-              <th class="has-text-centered">OC↑</th>
-              <th class="has-text-centered">AUA↓</th>
-              <th class="has-text-centered">ASR↑</th>
-              <th class="has-text-centered">COS↑</th>
-              <th class="has-text-centered">OC↑</th>
-              <th class="has-text-centered">AUA↓</th>
-              <th class="has-text-centered">ASR↑</th>
-              <th class="has-text-centered">COS↑</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Kokoro (British Male)</td>
-              <td class="has-text-centered">95.1%</td>
-              <td class="has-text-centered">39.9%</td>
-              <td class="has-text-centered"><strong>58.1%</strong></td>
-              <td class="has-text-centered">90.5%</td>
-              <td class="has-text-centered">96.9%</td>
-              <td class="has-text-centered">43.9%</td>
-              <td class="has-text-centered">54.7%</td>
-              <td class="has-text-centered">91.7%</td>
-              <td class="has-text-centered">100.0%</td>
-              <td class="has-text-centered">98.9%</td>
-              <td class="has-text-centered">1.1%</td>
-              <td class="has-text-centered">89.5%</td>
-            </tr>
-            <tr>
-              <td>Kokoro (British Female)</td>
-              <td class="has-text-centered">92.4%</td>
-              <td class="has-text-centered">30.4%</td>
-              <td class="has-text-centered"><strong>67.1%</strong></td>
-              <td class="has-text-centered">91.3%</td>
-              <td class="has-text-centered">97.7%</td>
-              <td class="has-text-centered">62.4%</td>
-              <td class="has-text-centered">36.2%</td>
-              <td class="has-text-centered">90.4%</td>
-              <td class="has-text-centered">92.4%</td>
-              <td class="has-text-centered">56.9%</td>
-              <td class="has-text-centered">38.4%</td>
-              <td class="has-text-centered">90.4%</td>
-            </tr>
-            <tr>
-              <td>Kokoro (American Male)</td>
-              <td class="has-text-centered">90.4%</td>
-              <td class="has-text-centered">37.9%</td>
-              <td class="has-text-centered"><strong>58.0%</strong></td>
-              <td class="has-text-centered">91.1%</td>
-              <td class="has-text-centered">83.3%</td>
-              <td class="has-text-centered">43.3%</td>
-              <td class="has-text-centered">56.6%</td>
-              <td class="has-text-centered">91.5%</td>
-              <td class="has-text-centered">100.0%</td>
-              <td class="has-text-centered">100.0%</td>
-              <td class="has-text-centered">0.0%</td>
-              <td class="has-text-centered">88.2%</td>
-            </tr>
-            <tr>
-              <td>Kokoro (American Female)</td>
-              <td class="has-text-centered">92.2%</td>
-              <td class="has-text-centered">32.6%</td>
-              <td class="has-text-centered">64.6%</td>
-              <td class="has-text-centered">91.0%</td>
-              <td class="has-text-centered">98.3%</td>
-              <td class="has-text-centered">32.6%</td>
-              <td class="has-text-centered">66.9%</td>
-              <td class="has-text-centered">92.1%</td>
-              <td class="has-text-centered">83.2%</td>
-              <td class="has-text-centered">20.3%</td>
-              <td class="has-text-centered"><strong>75.6%</strong></td>
-              <td class="has-text-centered">93.3%</td>
-            </tr>
-            <tr>
-              <td>Coqui (Donald Trump)</td>
-              <td class="has-text-centered">85.5%</td>
-              <td class="has-text-centered">25.7%</td>
-              <td class="has-text-centered"><strong>69.9%</strong></td>
-              <td class="has-text-centered">93.2%</td>
-              <td class="has-text-centered">98.9%</td>
-              <td class="has-text-centered">62.0%</td>
-              <td class="has-text-centered">37.3%</td>
-              <td class="has-text-centered">92.3%</td>
-              <td class="has-text-centered">99.8%</td>
-              <td class="has-text-centered">88.4%</td>
-              <td class="has-text-centered">11.4%</td>
-              <td class="has-text-centered">90.2%</td>
-            </tr>
-            <tr>
-              <td>Coqui (Elon Musk)</td>
-              <td class="has-text-centered">98.0%</td>
-              <td class="has-text-centered">75.9%</td>
-              <td class="has-text-centered">22.5%</td>
-              <td class="has-text-centered">90.9%</td>
-              <td class="has-text-centered">98.4%</td>
-              <td class="has-text-centered">62.1%</td>
-              <td class="has-text-centered"><strong>36.9%</strong></td>
-              <td class="has-text-centered">91.1%</td>
-              <td class="has-text-centered">100.0%</td>
-              <td class="has-text-centered">99.9%</td>
-              <td class="has-text-centered">0.1%</td>
-              <td class="has-text-centered">89.7%</td>
-            </tr>
-            <tr>
-              <td>Coqui (Taylor Swift)</td>
-              <td class="has-text-centered">94.4%</td>
-              <td class="has-text-centered">17.0%</td>
-              <td class="has-text-centered"><strong>82.0%</strong></td>
-              <td class="has-text-centered">92.9%</td>
-              <td class="has-text-centered">95.1%</td>
-              <td class="has-text-centered">20.0%</td>
-              <td class="has-text-centered">79.0%</td>
-              <td class="has-text-centered">92.8%</td>
-              <td class="has-text-centered">99.7%</td>
-              <td class="has-text-centered">88.2%</td>
-              <td class="has-text-centered">11.5%</td>
-              <td class="has-text-centered">89.5%</td>
-            </tr>
-            <tr>
-              <td>Coqui (Oprah Winfrey)</td>
-              <td class="has-text-centered">98.9%</td>
-              <td class="has-text-centered">79.0%</td>
-              <td class="has-text-centered"><strong>20.1%</strong></td>
-              <td class="has-text-centered">91.5%</td>
-              <td class="has-text-centered">99.7%</td>
-              <td class="has-text-centered">99.7%</td>
-              <td class="has-text-centered">0.0%</td>
-              <td class="has-text-centered">90.5%</td>
-              <td class="has-text-centered">95.8%</td>
-              <td class="has-text-centered">86.2%</td>
-              <td class="has-text-centered">9.9%</td>
-              <td class="has-text-centered">91.0%</td>
-            </tr>
-            <tr>
-              <td>F5 (Male)</td>
-              <td class="has-text-centered">88.5%</td>
-              <td class="has-text-centered">33.4%</td>
-              <td class="has-text-centered">62.2%</td>
-              <td class="has-text-centered">92.8%</td>
-              <td class="has-text-centered">93.2%</td>
-              <td class="has-text-centered">7.9%</td>
-              <td class="has-text-centered"><strong>91.6%</strong></td>
-              <td class="has-text-centered">94.6%</td>
-              <td class="has-text-centered">99.4%</td>
-              <td class="has-text-centered">78.0%</td>
-              <td class="has-text-centered">21.5%</td>
-              <td class="has-text-centered">90.7%</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>
-          Bold values indicate the TTS-voice pair that is most effective at
-          attacking (ASR) each detector model.
-        </p>
-      </div>
-
-      <div class="hero-body is-centered has-text-centered">
-        <h2 class="title is-3">
-          Commercial Anti-Spoofing Detector Performance Results
-        </h2>
-        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
-          <thead>
-            <tr class="has-background-primary has-text-white">
-              <th class="has-text-centered">Detector - TTS System</th>
-              <th class="has-text-centered">OC↑</th>
-              <th class="has-text-centered">AUA↓</th>
-              <th class="has-text-centered">ASR↑</th>
-              <th class="has-text-centered">COS↑</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>API-A - Coqui</td>
-              <td class="has-text-centered">100.0%</td>
-              <td class="has-text-centered">98.0%</td>
-              <td class="has-text-centered">2.0%</td>
-              <td class="has-text-centered">85.7%</td>
-            </tr>
-            <tr>
-              <td>API-A - F5</td>
-              <td class="has-text-centered">99.0%</td>
-              <td class="has-text-centered">70.0%</td>
-              <td class="has-text-centered">29.3%</td>
-              <td class="has-text-centered">86.2%</td>
-            </tr>
-            <tr>
-              <td>API-A - Kokoro</td>
-              <td class="has-text-centered">100.0%</td>
-              <td class="has-text-centered">74.0%</td>
-              <td class="has-text-centered">26.0%</td>
-              <td class="has-text-centered">84.1%</td>
-            </tr>
-            <tr>
-              <td>API-A - OpenAI</td>
-              <td class="has-text-centered">95.0%</td>
-              <td class="has-text-centered">32.0%</td>
-              <td class="has-text-centered">66.3%</td>
-              <td class="has-text-centered">89.3%</td>
-            </tr>
-            <tr class="has-background-light">
-              <td colspan="5" class="has-text-centered"></td>
-            </tr>
-            <tr>
-              <td>API-B - Coqui</td>
-              <td class="has-text-centered">100.0%</td>
-              <td class="has-text-centered">100.0%</td>
-              <td class="has-text-centered">0.0%</td>
-              <td class="has-text-centered">87.0%</td>
-            </tr>
-            <tr>
-              <td>API-B - F5</td>
-              <td class="has-text-centered">100.0%</td>
-              <td class="has-text-centered">100.0%</td>
-              <td class="has-text-centered">0.0%</td>
-              <td class="has-text-centered">87.3%</td>
-            </tr>
-            <tr>
-              <td>API-B - Kokoro</td>
-              <td class="has-text-centered">100.0%</td>
-              <td class="has-text-centered">100.0%</td>
-              <td class="has-text-centered">0.0%</td>
-              <td class="has-text-centered">80.8%</td>
-            </tr>
-            <tr>
-              <td>API-B - OpenAI</td>
-              <td class="has-text-centered">100.0%</td>
-              <td class="has-text-centered">96.0%</td>
-              <td class="has-text-centered">4.0%</td>
-              <td class="has-text-centered">86.3%</td>
-            </tr>
-            <tr class="has-background-light">
-              <td colspan="5" class="has-text-centered"></td>
-            </tr>
-            <tr>
-              <td>CLAD - OpenAI</td>
-              <td class="has-text-centered">86.0%</td>
-              <td class="has-text-centered">4.0%</td>
-              <td class="has-text-centered">95.3%</td>
-              <td class="has-text-centered">93.4%</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="section hero">
+    <!-- Open-Source Anti-Spoofing Detector Performance Results -->
+    <section class="hero">
       <div class="hero-body">
-        <div class="container">
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <h2 class="title is-3">Acoustic Examples</h2>
-              <div
-                class="chat-container"
-                style="max-width: 800px; margin: 0 auto; padding: 20px"
-              >
-                <!-- Chat Message 1 - Left Side (Positive Audio) -->
-                <div
-                  class="chat-message"
-                  style="
-                    display: flex;
-                    justify-content: flex-start;
-                    margin-bottom: 20px;
-                  "
-                >
-                  <div
-                    class="user-avatar"
-                    style="background: #ff416c; margin-right: 15px"
-                  >
-                    Fraud
-                  </div>
-                  <div class="message-bubble" style="background-color: #ffeaea">
-                    <audio controls="" style="width: 100%; max-width: 300px">
-                      <source
-                        src="./static/audio/emotion_consistency/sample_0_0.wav"
-                      />
-                    </audio>
-                  </div>
-                </div>
+        <div class="container is-max-desktop">
+          <div class="is-centered has-text-centered">
+            <h2 class="title is-3 has-text-link">
+              Open-Source Anti-Spoofing Detector Performance Results
+            </h2>
+            <div class="content has-text-justified">
+              <p>
+                Our evaluation of open-source anti-spoofing systems (AASIST-2, CLAD,
+                RawNet-2) reveals significant vulnerabilities to transcript-level
+                adversarial attacks. We observe a reduction in
+                <strong>Original Accuracy (OC)</strong> and
+                <strong>Accuracy Under Attack (AUA)</strong>, indicating that subtle
+                linguistic changes can significantly degrade detection performance.
+                Correspondingly, the <strong>Attack Success Rate (ASR)</strong>,
+                representing the percentage of spoof audio misclassified as real,
+                consistently rises, exceeding 60% for several detector-voice pairs. The
+                <strong>Semantic Preservation Score (COS)</strong> remains high,
+                confirming that attacks maintain the original meaning.
+              </p>
+            </div>
 
-                <!-- Chat Message 2 - Right Side (Negative Audio) -->
-                <div
-                  class="chat-message"
-                  style="
-                    display: flex;
-                    justify-content: flex-end;
-                    margin-bottom: 20px;
-                  "
-                >
-                  <div class="message-bubble" style="background-color: #e8f4f8">
-                    <audio controls="" style="width: 100%; max-width: 300px">
-                      <source
-                        src="./static/audio/emotion_consistency/sample_0_1.wav"
-                      />
-                    </audio>
-                  </div>
-                  <div
-                    class="user-avatar"
-                    style="background: #4facfe; margin-left: 15px"
-                  >
-                    Victim
-                  </div>
-                </div>
-
-                <div
-                  class="chat-message"
-                  style="
-                    display: flex;
-                    justify-content: flex-start;
-                    margin-bottom: 20px;
-                  "
-                >
-                  <div
-                    class="user-avatar"
-                    style="background: #ff416c; margin-right: 15px"
-                  >
-                    Fraud
-                  </div>
-                  <div class="message-bubble" style="background-color: #ffeaea">
-                    <audio controls="" style="width: 100%; max-width: 300px">
-                      <source
-                        src="./static/audio/emotion_consistency/sample_0_0.wav"
-                      />
-                    </audio>
-                  </div>
-                </div>
-
-                <!-- Chat Message 2 - Right Side (Negative Audio) -->
-                <div
-                  class="chat-message"
-                  style="
-                    display: flex;
-                    justify-content: flex-end;
-                    margin-bottom: 20px;
-                  "
-                >
-                  <div class="message-bubble" style="background-color: #e8f4f8">
-                    <audio controls="" style="width: 100%; max-width: 300px">
-                      <source
-                        src="./static/audio/emotion_consistency/sample_0_1.wav"
-                      />
-                    </audio>
-                  </div>
-                  <div
-                    class="user-avatar"
-                    style="background: #4facfe; margin-left: 15px"
-                  >
-                    Victim
-                  </div>
-                </div>
-
-                <!-- You can add more chat messages here for additional samples -->
-                <!-- Example of adding another pair:
-                <div class="chat-message" style="display: flex; justify-content: flex-start; margin-bottom: 20px;">
-                  <div class="user-avatar" style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 15px; flex-shrink: 0;">
-                    P
-                  </div>
-                  <div class="message-bubble" style="background-color: #f1f3f4; border-radius: 18px; padding: 12px 18px; max-width: 70%; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">
-                    <div style="font-size: 0.9em; color: #5f6368; margin-bottom: 8px; font-weight: 500;">
-                      Positive Sample 2
-                    </div>
-                    <audio controls="" style="width: 100%; max-width: 300px;">
-                      <source src="./static/audio/sample_2_positive.wav" />
-                    </audio>
-                  </div>
-                </div>
-
-                <div class="chat-message" style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
-                  <div class="message-bubble" style="background-color: #e3f2fd; border-radius: 18px; padding: 12px 18px; max-width: 70%; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">
-                    <div style="font-size: 0.9em; color: #1565c0; margin-bottom: 8px; font-weight: 500;">
-                      Negative Sample 2
-                    </div>
-                    <audio controls="" style="width: 100%; max-width: 300px;">
-                      <source src="./static/audio/sample_2_negative.wav" />
-                    </audio>
-                  </div>
-                  <div class="user-avatar" style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-left: 15px; flex-shrink: 0;">
-                    N
-                  </div>
-                </div>
-                -->
+            <div id="open-source-table-container" style="margin-top: 20px;">
+              <!-- Table will be loaded here by JavaScript -->
+              <div class="has-text-centered">
+                <div class="button is-loading is-medium">Loading...</div>
               </div>
             </div>
+
+            <p id="open-source-note" class="is-size-6 has-text-centered" style="margin-bottom: 30px;">
+              <strong>Table 1</strong>: Bold values indicate the TTS-voice pair that is most effective at
+              attacking (ASR) each detector model.
+            </p>
+
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Commercial Anti-Spoofing Detector Performance Results -->
+    <section class="hero is-light">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="is-centered has-text-centered">
+            <h2 class="title is-3 has-text-link">
+              Commercial Anti-Spoofing Detector Performance Results
+            </h2>
+            <div class="content has-text-justified">
+              <p>
+                Commercial anti-spoofing detector API-A also shows vulnerability to
+                transcript-level adversarial attacks. We observe a substantial drop in
+                <strong>Original Accuracy (OC)</strong> and
+                <strong>Accuracy Under Attack (AUA)</strong> for API-A, particularly with
+                high-fidelity OpenAI TTS, resulting in a high
+                <strong>Attack Success Rate (ASR)</strong> of 66.3%. While API-B
+                appears more robust initially, its high
+                <strong>Original Accuracy (OC)</strong> is partly due to a bias. The
+                open-source CLAD model, when evaluated with OpenAI TTS, demonstrates an
+                extremely high <strong>Attack Success Rate (ASR)</strong> of 95.3%. The
+                high <strong>Semantic Preservation Score (COS)</strong> indicates the
+                attacks maintain the original meaning, highlighting a concerning
+                vulnerability in state-of-the-art commercial systems.
+              </p>
+            </div>
+
+
+            <div id="commercial-table-container" style="margin-top: 20px;">
+              <!-- Table will be loaded here by JavaScript -->
+              <div class="has-text-centered">
+                <div class="button is-loading is-medium">Loading...</div>
+              </div>
+
+
+            </div>
+            <p class="is-size-6 has-text-centered" style="margin-bottom: 30px;">
+                <strong>Table 2</strong>: This table presents the attack success rates of commercial anti-spoofing detectors against various Text-to-Speech systems, highlighting their real-world vulnerabilities.
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Acoustic Examples -->
+
+    <!-- Brad Pitt Deepfake Scam Case Study -->
+    <section class="section hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3 has-text-centered has-text-link">Brad Pitt Deepfake Scam Case Study</h2>
+                
+                <p style="margin-top: 20px; margin-bottom: 20px; text-align: justify;">
+                    This case study on a simulated Brad Pitt deepfake scam demonstrates how minor linguistic changes in the transcript can dramatically increase a fake audio's detection probability as real. The results highlight that even state-of-the-art commercial detectors are vulnerable to these transcript-level adversarial attacks, posing a significant real-world risk. Crucially, these attacks can succeed even if the altered wording is slightly unnatural or grammatically imperfect.
+                </p>
+
+                <div id="brad-pitt-examples-container">
+                    <!-- Examples will be loaded here by JavaScript -->
+                    <div class="has-text-centered">
+                      <div class="button is-loading is-medium">Loading...</div>
+                    </div>
+                </div>
+                <p class="is-size-6 has-text-centered" style="margin-bottom: 30px;">
+                  <strong>Table 3</strong>: This table illustrates the Brad Pitt deepfake scam case study, showing how subtle transcript modifications can flip commercial detector predictions from fake to real.
+
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Inside the Black Box: Attributing Vulnerabilities in Anti-Spoofing Systems -->
+    <section class="section hero is-light">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3 has-text-centered has-text-link">Inside the Black Box: Attributing Vulnerabilities in Anti-Spoofing Systems</h2>
+
+          <div class="content has-text-justified">
+            <p>
+              Beyond providing empirical validation of our initial hypothesis that audio anti-spoof detectors are sensitive to small linguistic changes in the audio's underlying transcripts, we conducted a detailed feature analysis. This section aims to investigate and analyze what factors and how much they associate with varying anti-spoofing detectors' decisions under adversarial attacks.
+            </p>
+            <p>
+              We extracted three main categories of features from our <strong>108 open-source attack experiments</strong>:
+            </p>
+            <ul>
+              <li>
+                <strong>Linguistic Features (LF):</strong> These capture characteristics at the transcript level that shift under adversarial attacks. Key features include:
+                <ul>
+                  <li><strong>Perturbed Percentage:</strong> The fraction of modified words.</li>
+                  <li><strong>Readability Difference:</strong> Change in reading comprehension difficulty.</li>
+                  <li><strong>Semantic Similarity:</strong> How much the meaning is preserved.</li>
+                  <li><strong>Perplexity Difference:</strong> Change in language model perplexity.</li>
+                  <li><strong>Syntactic Complexity Difference:</strong> Change in syntactic tree depth.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Acoustic Features (AF):</strong> These measure differences in the generated audio due to transcript changes:
+                <ul>
+                  <li><strong>DTW Distance:</strong> Alignment cost between mel spectrograms.</li>
+                  <li><strong>Duration Difference:</strong> Change in audio length.</li>
+                  <li><strong>Phoneme Perplexity Difference:</strong> Change in phoneme sequence unpredictability.</li>
+                  <li><strong>Aesthetics Difference:</strong> Shifts in automated audio quality assessments (Content Enjoyment, Content Usefulness, Production Complexity, Production Quality).</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Model-Level Features (MF):</strong> These relate to how the detector itself processes the audio:
+                <ul>
+                  <li><strong>Audio Encoder Similarity (AES):</strong> How closely audios from the same voice cluster in the detector's internal representation.</li>
+                  <li><strong>Spoof and Bona-fide F1:</strong> The detector's pre-existing performance metrics, reflecting potential biases.</li>
+                </ul>
+              </li>
+            </ul>
+
+            <h3 class="title is-4 has-text-centered has-text-info" style="margin-top: 40px; margin-bottom: 20px;">Logistic Regression Analysis Results</h3>
+            <table class="table is-bordered is-striped is-hoverable is-fullwidth no-vertical-lines">
+              <thead>
+                <tr class="has-background-info-light has-text-white">
+                  <th class="has-text-centered">Feature</th>
+                  <th class="has-text-centered">coef</th>
+                  <th class="has-text-centered">std err</th>
+                  <th class="has-text-centered">z</th>
+                  <th class="has-text-centered">P>|z|</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Separator Row -->
+                <tr class="has-background-light"><td colspan="5" class="has-text-centered has-text-weight-bold">Linguistic Features</td></tr>
+                <!-- Linguistic Features -->
+                <tr><td>Perturbed Percentage</td><td class="has-text-centered">-0.3507</td><td class="has-text-centered">0.009</td><td class="has-text-centered">-39.31</td><td class="has-text-centered">0.000</td></tr>
+                <tr><td>▲ Readability</td><td class="has-text-centered">0.0352</td><td class="has-text-centered">0.007</td><td class="has-text-centered">4.69</td><td class="has-text-centered">0.000</td></tr>
+                <tr><td>▲ PPL</td><td class="has-text-centered">0.0758</td><td class="has-text-centered">0.009</td><td class="has-text-centered">8.48</td><td class="has-text-centered">0.000</td></tr>
+                <tr><td>▲ Syntactic Complexity</td><td class="has-text-centered">0.0125</td><td class="has-text-centered">0.007</td><td class="has-text-centered">1.76</td><td class="has-text-centered">0.077</td></tr>
+                
+                <!-- Separator Row -->
+                <tr class="has-background-light"><td colspan="5" class="has-text-centered has-text-weight-bold">Acoustic Features</td></tr>
+                <!-- Acoustic Features -->
+                <tr><td>▲ Duration</td><td class="has-text-centered">0.0748</td><td class="has-text-centered">0.008</td><td class="has-text-centered">8.89</td><td class="has-text-centered">0.000</td></tr>
+                <tr><td>DTW Distance</td><td class="has-text-centered">0.2063</td><td class="has-text-centered">0.008</td><td class="has-text-centered">26.73</td><td class="has-text-centered">0.000</td></tr>
+                <tr><td>▲ Phoneme PPL</td><td class="has-text-centered">-0.0112</td><td class="has-text-centered">0.007</td><td class="has-text-centered">-1.54</td><td class="has-text-centered">0.122</td></tr>
+                <tr><td>▲ Content Enjoyment</td><td class="has-text-centered">0.0536</td><td class="has-text-centered">0.013</td><td class="has-text-centered">4.18</td><td class="has-text-centered">0.000</td></tr>
+                <tr><td>▲ Content Usefulness</td><td class="has-text-centered">0.0679</td><td class="has-text-centered">0.021</td><td class="has-text-centered">3.17</td><td class="has-text-centered">0.001</td></tr>
+                <tr><td>▲ Production Complexity</td><td class="has-text-centered">0.0110</td><td class="has-text-centered">0.010</td><td class="has-text-centered">1.12</td><td class="has-text-centered">0.264</td></tr>
+                <tr><td>▲ Production Quality</td><td class="has-text-centered">0.0307</td><td class="has-text-centered">0.017</td><td class="has-text-centered">1.82</td><td class="has-text-centered">0.069</td></tr>
+                
+                <!-- Separator Row -->
+                <tr class="has-background-light"><td colspan="5" class="has-text-centered has-text-weight-bold">Model-Level Features</td></tr>
+                <!-- Model-Level Features -->
+                <tr><td>Audio Encoder Similarity</td><td class="has-text-centered">-0.9013</td><td class="has-text-centered">0.011</td><td class="has-text-centered">-81.60</td><td class="has-text-centered">0.000</td></tr>
+                <tr><td>Spoof F1</td><td class="has-text-centered">3.1254</td><td class="has-text-centered">0.159</td><td class="has-text-centered">19.60</td><td class="has-text-centered">0.000</td></tr>
+                <tr><td>Bona-fide F1</td><td class="has-text-centered">-2.5911</td><td class="has-text-centered">0.159</td><td class="has-text-centered">-16.25</td><td class="has-text-centered">0.000</td></tr>
+              </tbody>
+            </table>
+            <p class="is-size-6 has-text-centered" style="margin-bottom: 30px;">
+              <strong>Table 4</strong>: Logistic regression feature analysis for bona-fide detection on adversarial samples. ▲ is the difference and Semantic Similarity feature is removed due to the high Variance Inflation Factor to avoid multicollinearity.
+            </p>
+
+
+            <p>
+              We then performed a logistic regression analysis using these features to predict
+              the bona-fide probability assigned to the adversarial audio samples. The
+              results showed that several linguistic and model-level features had
+              statistically significant associations with the detector's output.
+            </p>
+
+            <p>
+              Notably, a higher
+              <strong>Perturbed Percentage</strong> is associated with a lower likelihood of
+              being classified as bona-fide. Surprisingly, increased
+              <strong>Readability Difference</strong> and <strong>Perplexity Difference</strong>
+              correlate positively with bona-fide probability, suggesting that making
+              transcripts linguistically more complex can sometimes fool detectors.
+            </p>
+
+            <p>
+              Among Acoustic Features, larger <strong>DTW Distance</strong> and
+              <strong>Duration Difference</strong> (more spectral and temporal deviation) also
+              correlated with higher bona-fide probabilities. This indicates that transcript
+              changes can indeed lead to acoustic changes that influence detection. Features
+              related to enhanced audio aesthetics (Content Enjoyment and Usefulness) also
+              suggested an increased likelihood of deceiving detectors.
+            </p>
+
+            <p>
+              The strongest predictor of vulnerability was
+              <strong>Audio Encoder Similarity (AES)</strong>. A high AES score (meaning
+              the detector sees the synthesized audio for a voice as very similar internally)
+              is strongly associated with a *lower* chance of the adversarial attack
+              succeeding. This suggests that detectors with audio encoders that tightly
+              cluster synthesized audio are more robust. Finally, the detector's initial
+              <strong>Spoof and Bona-fide F1 scores</strong> were also significant predictors,
+              indicating that pre-existing biases influence how well attacks work.
+            </p>
+
+            <p>
+              These findings highlight that both the linguistic properties of the transcript
+              and the detector's internal audio representations play crucial roles in their
+              vulnerability to these attacks, pointing towards the need for defenses that
+              consider both aspects.
+            </p>
+
+            <div class="has-text-centered" style="margin-top: 30px; margin-bottom: 30px;">
+              <figure class="image is-inline-block">
+                <img src="static/images/figure2.png" alt="Feature impact on bona-fide probability prediction" style="max-width: 800px;">
+              </figure>
+              <p class="is-size-6 has-text-centered">
+                <strong>Figure 1</strong>: Feature impact on bona-fide probability prediction. A positive effect means the feature increases the likelihood of a perturbed item being classified as bona-fide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- BibTeX -->
-    <section class="section" id="BibTeX">
+    <section class="section hero" id="BibTeX">
       <div class="container is-max-desktop content">
-        <h2 class="title">BibTeX</h2>
+        <h2 class="title has-text-link">BibTeX</h2>
         <pre><code>@article{nguyen2025linguistic,
   title={What You Read Isn't What You Hear: Linguistic Sensitivity in Deepfake Speech Detection},
   author={Nguyen, Binh and Shi, Shuju and Ofman, Ryan and Le, Thai},
@@ -658,5 +506,396 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      // Data for Open-Source table
+      const openSourceData = [
+        { // Separator after Kokoro
+          tts: "separator", category: "Kokoro"
+        },
+        {
+          tts: "Kokoro (British Male)",
+          aasist2: { oc: "95.1%", aua: "39.9%", asr: "58.1%", cos: "90.5%", highlight: "asr" },
+          clad: { oc: "96.9%", aua: "43.9%", asr: "54.7%", cos: "91.7%" },
+          rawnet2: { oc: "100.0%", aua: "98.9%", asr: "1.1%", cos: "89.5%" }
+        },
+        {
+          tts: "Kokoro (British Female)",
+          aasist2: { oc: "92.4%", aua: "30.4%", asr: "67.1%", cos: "91.3%", highlight: "asr" },
+          clad: { oc: "97.7%", aua: "62.4%", asr: "36.2%", cos: "90.4%" },
+          rawnet2: { oc: "92.4%", aua: "56.9%", asr: "38.4%", cos: "90.4%" }
+        },
+        {
+          tts: "Kokoro (American Male)",
+          aasist2: { oc: "90.4%", aua: "37.9%", asr: "58.0%", cos: "91.1%", highlight: "asr" },
+          clad: { oc: "83.3%", aua: "43.3%", asr: "56.6%", cos: "91.5%" },
+          rawnet2: { oc: "100.0%", aua: "100.0%", asr: "0.0%", cos: "88.2%" }
+        },
+        {
+          tts: "Kokoro (American Female)",
+          aasist2: { oc: "92.2%", aua: "32.6%", asr: "64.6%", cos: "91.0%" },
+          clad: { oc: "98.3%", aua: "32.6%", asr: "66.9%", cos: "92.1%" },
+          rawnet2: { oc: "83.2%", aua: "20.3%", asr: "75.6%", cos: "93.3%", highlight: "asr" }
+        },
+        { // Separator after Kokoro
+          tts: "separator", category: "Coqui"
+        },
+        {
+          tts: "Coqui (Donald Trump)",
+          aasist2: { oc: "85.5%", aua: "25.7%", asr: "69.9%", cos: "93.2%", highlight: "asr" },
+          clad: { oc: "98.9%", aua: "62.0%", asr: "37.3%", cos: "92.3%" },
+          rawnet2: { oc: "99.8%", aua: "88.4%", asr: "11.4%", cos: "90.2%" }
+        },
+        {
+          tts: "Coqui (Elon Musk)",
+          aasist2: { oc: "98.0%", aua: "75.9%", asr: "22.5%", cos: "90.9%" },
+          clad: { oc: "98.4%", aua: "62.1%", asr: "36.9%", cos: "91.1%", highlight: "asr" },
+          rawnet2: { oc: "100.0%", aua: "99.9%", asr: "0.1%", cos: "89.7%" }
+        },
+        {
+          tts: "Coqui (Taylor Swift)",
+          aasist2: { oc: "94.4%", aua: "17.0%", asr: "82.0%", cos: "92.9%", highlight: "asr" },
+          clad: { oc: "95.1%", aua: "20.0%", asr: "79.0%", cos: "92.8%" },
+          rawnet2: { oc: "99.7%", aua: "88.2%", asr: "11.5%", cos: "89.5%" }
+        },
+        {
+          tts: "Coqui (Oprah Winfrey)",
+          aasist2: { oc: "98.9%", aua: "79.0%", asr: "20.1%", cos: "91.5%", highlight: "asr" },
+          clad: { oc: "99.7%", aua: "99.7%", asr: "0.0%", cos: "90.5%" },
+          rawnet2: { oc: "95.8%", aua: "86.2%", asr: "9.9%", cos: "91.0%" }
+        },
+         { // Separator after Coqui
+          tts: "separator", category: "F5"
+        },
+        {
+          tts: "F5 (Male)",
+          aasist2: { oc: "88.5%", aua: "33.4%", asr: "62.2%", cos: "92.8%" },
+          clad: { oc: "93.2%", aua: "7.9%", asr: "91.6%", cos: "94.6%", highlight: "asr" },
+          rawnet2: { oc: "99.4%", aua: "78.0%", asr: "21.5%", cos: "90.7%" }
+        }
+      ];
+
+      // Data for Commercial table (Added categories and separators)
+      const commercialData = [
+        { // Separator after API-B
+          detector: "separator", category: "API-A Detector"
+        },
+        { detector: "API-A - Coqui", oc: "100.0%", aua: "98.0%", asr: "2.0%", cos: "85.7%" },
+        { detector: "API-A - F5", oc: "99.0%", aua: "70.0%", asr: "29.3%", cos: "86.2%" },
+        { detector: "API-A - Kokoro", oc: "100.0%", aua: "74.0%", asr: "26.0%", cos: "84.1%" },
+        { detector: "API-A - OpenAI", oc: "95.0%", aua: "32.0%", asr: "66.3%", cos: "89.3%" },
+        { // Separator after API-A
+          detector: "separator", category: "API-B Detector"
+        },
+        { detector: "API-B - Coqui", oc: "100.0%", aua: "100.0%", asr: "0.0%", cos: "87.0%" },
+        { detector: "API-B - F5", oc: "100.0%", aua: "100.0%", asr: "0.0%", cos: "87.3%" },
+        { detector: "API-B - Kokoro", oc: "100.0%", aua: "100.0%", asr: "0.0%", cos: "80.8%" },
+        { detector: "API-B - OpenAI", oc: "100.0%", aua: "96.0%", asr: "4.0%", cos: "86.3%" },
+        { // Separator after API-B
+          detector: "separator", category: "OpenAI TTS"
+        },
+        { detector: "CLAD - OpenAI", oc: "86.0%", aua: "4.0%", asr: "95.3%", cos: "93.4%" }
+      ];
+
+      // Function to create Open-Source table
+      function createOpenSourceTable(data) {
+        const table = document.createElement('table');
+        table.className = 'table is-bordered is-striped is-hoverable is-fullwidth no-vertical-lines';
+
+        // Create header (remains the same)
+        const thead = document.createElement('thead');
+        thead.innerHTML = `
+          <tr class="has-background-info-light has-text-white">
+            <th rowspan="2" class="has-text-centered">Text-to-Speech</th>
+            <th colspan="4" class="has-text-centered">AASIST-2</th>
+            <th colspan="4" class="has-text-centered">CLAD</th>
+            <th colspan="4" class="has-text-centered">RawNet-2</th>
+          </tr>
+          <tr class="has-background-info-light has-text-white">
+            <th class="has-text-centered">OC↑</th>
+            <th class="has-text-centered">AUA↓</th>
+            <th class="has-text-centered">ASR↑</th>
+            <th class="has-text-centered">COS↑</th>
+            <th class="has-text-centered">OC↑</th>
+            <th class="has-text-centered">AUA↓</th>
+            <th class="has-text-centered">ASR↑</th>
+            <th class="has-text-centered">COS↑</th>
+            <th class="has-text-centered">OC↑</th>
+            <th class="has-text-centered">AUA↓</th>
+            <th class="has-text-centered">ASR↑</th>
+            <th class="has-text-centered">COS↑</th>
+          </tr>
+        `;
+        
+        // Create body
+        const tbody = document.createElement('tbody');
+        let currentCategory = ''; // Track the current TTS category for Open-Source
+        data.forEach(row => {
+            if (row.tts === 'separator') {
+                 const tr = document.createElement('tr');
+                 tr.className = 'has-background-light';
+                 tr.innerHTML = `<td colspan="13" class="has-text-centered has-text-weight-bold">${row.category} TTS System</td>`; // Adjust colspan for Open-Source
+                 tbody.appendChild(tr);
+                 currentCategory = row.category; // Update category
+            } else {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                  <td>${row.tts}</td>
+                  <td class="has-text-centered">${row.aasist2.oc}</td>
+                  <td class="has-text-centered">${row.aasist2.aua}</td>
+                  <td class="has-text-centered">${row.aasist2.highlight === 'asr' ? '<strong>' + row.aasist2.asr + '</strong>' : row.aasist2.asr}</td>
+                  <td class="has-text-centered">${row.aasist2.cos}</td>
+                  <td class="has-text-centered">${row.clad.oc}</td>
+                  <td class="has-text-centered">${row.clad.aua}</td>
+                  <td class="has-text-centered">${row.clad.highlight === 'asr' ? '<strong>' + row.clad.asr + '</strong>' : row.clad.asr}</td>
+                  <td class="has-text-centered">${row.clad.cos}</td>
+                  <td class="has-text-centered">${row.rawnet2.oc}</td>
+                  <td class="has-text-centered">${row.rawnet2.aua}</td>
+                  <td class="has-text-centered">${row.rawnet2.highlight === 'asr' ? '<strong>' + row.rawnet2.asr + '</strong>' : row.rawnet2.asr}</td>
+                  <td class="has-text-centered">${row.rawnet2.cos}</td>
+                `;
+                tbody.appendChild(tr);
+            }
+        });
+
+        table.appendChild(thead);
+        table.appendChild(tbody);
+        return table;
+      }
+
+      // Function to create Commercial table
+      function createCommercialTable(data) {
+        const table = document.createElement('table');
+        table.className = 'table is-bordered is-striped is-hoverable is-fullwidth no-vertical-lines';
+
+        // Create header (remains the same)
+        const thead = document.createElement('thead');
+        thead.innerHTML = `
+          <tr class="has-background-info-light has-text-white">
+            <th class="has-text-centered">Detector - TTS System</th>
+            <th class="has-text-centered">OC↑</th>
+            <th class="has-text-centered">AUA↓</th>
+            <th class="has-text-centered">ASR↑</th>
+            <th class="has-text-centered">COS↑</th>
+          </tr>
+        `;
+
+        // Create body
+        const tbody = document.createElement('tbody');
+        let currentCategory = ''; // Track the current API/Detector category for Commercial
+        data.forEach(row => {
+            if (row.detector === 'separator') {
+                 const tr = document.createElement('tr');
+                 tr.className = 'has-background-light';
+                 tr.innerHTML = `<td colspan="5" class="has-text-centered has-text-weight-bold">${row.category}</td>`; // Adjust colspan for Commercial
+                 tbody.appendChild(tr);
+                 currentCategory = row.category; // Update category
+            } else {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                  <td>${row.detector}</td>
+                  <td class="has-text-centered">${row.oc}</td>
+                  <td class="has-text-centered">${row.aua}</td>
+                  <td class="has-text-centered">${row.asr}</td>
+                  <td class="has-text-centered">${row.cos}</td>
+                `;
+                tbody.appendChild(tr);
+            }
+        });
+
+        table.appendChild(thead);
+        table.appendChild(tbody);
+        return table;
+      }
+
+      // Function to load tables
+      function loadTables() {
+        try {
+          // Load Open-Source table
+          const openSourceContainer = document.getElementById('open-source-table-container');
+          const openSourceTable = createOpenSourceTable(openSourceData);
+          openSourceContainer.innerHTML = '';
+          openSourceContainer.appendChild(openSourceTable);
+          
+          // Show the note
+          document.getElementById('open-source-note').style.display = 'block';
+          
+          // Load Commercial table
+          const commercialContainer = document.getElementById('commercial-table-container');
+          const commercialTable = createCommercialTable(commercialData);
+          commercialContainer.innerHTML = '';
+          commercialContainer.appendChild(commercialTable);
+
+          const bradPittContainer = document.getElementById('brad-pitt-examples-container');
+          const bradPittTable = createBradPittTable(brad_pitt);
+          bradPittContainer.innerHTML = '';
+          bradPittContainer.appendChild(bradPittTable);
+            
+          
+        } catch (error) {
+          console.error('Error loading tables:', error);
+          document.getElementById('open-source-table-container').innerHTML = '<div class="notification is-danger">Error loading table data</div>';
+          document.getElementById('commercial-table-container').innerHTML = '<div class="notification is-danger">Error loading table data</div>';
+          document.getElementById('brad-pitt-examples-container').innerHTML = '<div class="notification is-danger">Error loading Brad Pitt examples</div>';
+        }
+      }
+
+      const brad_pitt = [
+          {
+              "original_text": "Anne, I need to be direct. Something urgent has come up, and I need your help immediately.",
+              "original_score": 0.00103748473306442,
+              "perturbed_text": "Anne, I should to be direct. Something urgent has come up, and I need your help immediately.",
+              "perturbed_score": 0.8128903002330707,
+              "original_audio": "BradPitt/640977882.wav",
+              "perturbed_audio": "BradPitt/641918454.wav",
+              "role": "Fraud" // Add a role key to distinguish
+          },
+          {
+              "original_text": "Brad? What is it? You sound serious.",
+              "role": "Victim" // Add a role key for victim
+          },
+          {
+              "original_text": "It's medical. I'm in the hospital. It's serious. Kidney cancer. They need to start a critical treatment, but there's a problem with funds.",
+              "original_score": 0.0029770359243501687,
+              "perturbed_text": "It's medical. I'm in the hospital. It's serious. Kidney cancer. They need to start a central treatment, but there's a problem with fund.",
+              "perturbed_score": 0.7902515428617998,
+              "original_audio": "BradPitt/2595737195.wav",
+              "perturbed_audio": "BradPitt/2093794028.wav",
+              "role": "Fraud"
+          },
+          {
+              "original_text": "Cancer? Oh no, Brad, I’m so sorry to hear that. What kind of problem with funds? Don’t you have insurance?",
+              "role": "Victim"
+          },
+          {
+              "original_text": "My accounts are frozen. Because of the messy divorce with Angelina, the courts have tied up everything. I can't access money quickly for this immediate hospital bill.",
+              "original_score": 0.027423199350642746,
+              "perturbed_text": "My accounts are ice. Because of the messy divorce with Angelina, the courts have tied up everything. I can't access money immediatly for this immediate hospital bill.",
+              "perturbed_score": 0.5549676800220379,
+              "original_audio": "BradPitt/141840784.wav",
+              "perturbed_audio": "BradPitt/462349692.wav",
+              "role": "Fraud"
+          },
+          {
+              "original_text": "Oh my god, Brad, are you telling me you’re lying in a hospital bed and they’re refusing to help you just because of money? Is there really no other way?",
+              "role": "Victim"
+          },
+          {
+            "original_text": "Exactly. The doctors need payment now to proceed with this vital step. Anne, you're the only person I can turn to in this moment of absolute crisis.",
+            "original_score": 0.006612599894835092,
+            "perturbed_text": "Exactly. The doctors need payment now to proceed with this essential step. Anne, you're the only person I can turn to in this moment of absolute crisis.",
+            "perturbed_score": 0.923579702927516,
+            "original_audio": "BradPitt/1800846992.wav",
+            "perturbed_audio": "BradPitt/3142094234.wav",
+            "role": "Fraud"
+          },
+          {
+              "original_text": "Me? But I... I’m not a millionaire, Brad. How much do they need?",
+              "role": "Victim"
+          },
+          {
+              "original_text": "They need a significant amount for this stage of treatment. It's 830,000 euros. I know it's a huge ask, Anne, but my life could depend on this.",
+              "original_score": 0.0011905688940390124,
+              "perturbed_text": "They need a whopping magnitude for this stage of treatment. It's 830,000 euros. I know it's a huge ask, Anne, but my life could depend on this.",
+              "perturbed_score": 0.9577044174865574,
+              "original_audio": "BradPitt/462937140.wav",
+              "perturbed_audio": "BradPitt/4047342268.wav",
+              "role": "Fraud"
+          },
+          {
+              "original_text": "830,000 euros?! That's an enormous sum. But how would I even? And where would I send it?",
+              "role": "Victim"
+          }
+      ];
+
+      function createBradPittTable(data) {
+          const table = document.createElement('table');
+          table.className = 'table is-bordered is-striped is-hoverable is-fullwidth no-vertical-lines';
+
+          const thead = document.createElement('thead');
+          thead.innerHTML = `
+              <tr class="has-background-info-light has-text-white">
+                  <th colspan="3" class="has-text-centered">Original (Detected as Fake)</th>
+                  <th colspan="3" class="has-text-centered">Perturbed (Detected as Real)</th>
+              </tr>
+              <tr class="has-background-info-light has-text-white">
+                  <th class="has-text-centered">Transcript</th>
+                  <th class="has-text-centered">Real Probability</th>
+                  <th class="has-text-centered">Audio</th>
+                  <th class="has-text-centered">Transcript</th>
+                  <th class="has-text-centered">Real Probability</th>
+                  <th class="has-text-centered">Audio</th>
+              </tr>
+          `;
+
+          const tbody = document.createElement('tbody');
+          data.forEach(row => {
+              const tr = document.createElement('tr');
+
+              if (row.role === "Victim") {
+                  // Handle victim rows: only display text, span across columns
+                  tr.innerHTML = `
+                      <td colspan="6" class="has-text-left has-text-weight-bold has-background-light">Victim: ${row.original_text}</td>
+                  `;
+              } else {
+                  // Handle fraud rows: highlight changes
+                  const originalWords = row.original_text.split(/\s+/); // Split by whitespace
+                  const perturbedWords = row.perturbed_text.split(/\s+/);
+
+                  let highlightedOriginal = '';
+                  let highlightedPerturbed = '';
+
+                  const maxLength = Math.max(originalWords.length, perturbedWords.length);
+
+                  for (let i = 0; i < maxLength; i++) {
+                      const originalWord = originalWords[i] || ''; // Handle different lengths
+                      const perturbedWord = perturbedWords[i] || '';
+
+                      if (originalWord !== perturbedWord) {
+                          // Words are different, highlight them
+                          highlightedOriginal += `<span style="color: red; font-weight: bold;">${originalWord}</span> `;
+                          highlightedPerturbed += `<span style="color: green; font-weight: bold;">${perturbedWord}</span> `;
+                      } else {
+                          // Words are the same, keep them black
+                          highlightedOriginal += `${originalWord} `;
+                          highlightedPerturbed += `${perturbedWord} `;
+                      }
+                  }
+
+                  // Trim trailing spaces
+                  highlightedOriginal = highlightedOriginal.trim();
+                  highlightedPerturbed = highlightedPerturbed.trim();
+
+
+                  tr.innerHTML = `
+                      <td>${highlightedOriginal}</td>
+                      <td class="has-text-centered">${(row.original_score * 100).toFixed(2)}%</td>
+                      <td>
+                          <audio controls="" style="width: 100%; min-width: 150px;">
+                              <source src="static/audio/${row.original_audio}" type="audio/wav">
+                              Your browser does not support the audio element.
+                          </audio>
+                      </td>
+                      <td>${highlightedPerturbed}</td>
+                      <td class="has-text-centered">${(row.perturbed_score * 100).toFixed(2)}%</td>
+                      <td>
+                          <audio controls="" style="width: 100%; min-width: 150px;">
+                              <source src="static/audio/${row.perturbed_audio}" type="audio/wav">
+                              Your browser does not support the audio element.
+                          </audio>
+                      </td>
+                  `;
+              }
+              tbody.appendChild(tr);
+          });
+
+          table.appendChild(thead);
+          table.appendChild(tbody);
+          return table;
+      }
+
+      // Load tables when page loads
+      document.addEventListener('DOMContentLoaded', loadTables);
+    </script>
   </body>
 </html>

@@ -1,0 +1,89 @@
+{
+    "log_summary": [
+        [
+            "Number of successful attacks:",
+            5
+        ],
+        [
+            "Number of failed attacks:",
+            0
+        ],
+        [
+            "Number of skipped attacks:",
+            0
+        ],
+        [
+            "Original accuracy:",
+            "100.0%"
+        ],
+        [
+            "Accuracy under attack:",
+            "0.0%"
+        ],
+        [
+            "Attack success rate:",
+            "100.0%"
+        ],
+        [
+            "Average perturbed word %:",
+            "6.57%"
+        ],
+        [
+            "Average num. words per input:",
+            24.4
+        ],
+        [
+            "Avg num queries:",
+            70.4
+        ]
+    ],
+    "attacker": "text_fooler",
+    "detector": "the_hive_ai",
+    "tts_voice": "BradPitt",
+    "TTS_query": 352,
+    "time_cost": "0h:16m:40.60s",
+    "original_wer": "11.57%",
+    "perturbed_wer": "11.57%",
+    "results": [
+        {
+            "original_text": "Anne, I need to be direct. Something urgent has come up, and I need your help immediately.",
+            "original_score": 0.00103748473306442,
+            "perturbed_text": "Anne, I should to be direct. Something urgent has come up, and I need your help immediately.",
+            "perturbed_score": 0.8128903002330707,
+            "original_audio": "BradPitt/640977882.wav",
+            "perturbed_audio": "BradPitt/641918454.wav"
+        },
+        {
+            "original_text": "It's medical. I'm in the hospital. It's serious. Kidney cancer. They need to start a critical treatment, but there's a problem with funds.",
+            "original_score": 0.0029770359243501687,
+            "perturbed_text": "It's medical. I'm in the hospital. It's serious. Kidney cancer. They need to start a central treatment, but there's a problem with fund.",
+            "perturbed_score": 0.7902515428617998,
+            "original_audio": "BradPitt/2595737195.wav",
+            "perturbed_audio": "BradPitt/2093794028.wav"
+        },
+        {
+            "original_text": "My accounts are frozen. Because of the messy divorce with Angelina, the courts have tied up everything. I can't access money quickly for this immediate hospital bill.",
+            "original_score": 0.027423199350642746,
+            "perturbed_text": "My accounts are ice. Because of the messy divorce with Angelina, the courts have tied up everything. I can't access money immediatly for this immediate hospital bill.",
+            "perturbed_score": 0.5549676800220379,
+            "original_audio": "BradPitt/141840784.wav",
+            "perturbed_audio": "BradPitt/462349692.wav"
+        },
+        {
+            "original_text": "Exactly. The doctors need payment now to proceed with this vital step. Anne, you're the only person I can turn to in this moment of absolute crisis.",
+            "original_score": 0.006612599894835092,
+            "perturbed_text": "Exactly. The doctors need payment now to proceed with this essential step. Anne, you're the only person I can turn to in this moment of absolute crisis.",
+            "perturbed_score": 0.923579702927516,
+            "original_audio": "BradPitt/1800846992.wav",
+            "perturbed_audio": "BradPitt/3142094234.wav"
+        },
+        {
+            "original_text": "They need a significant amount for this stage of treatment. It's 830,000 euros. I know it's a huge ask, Anne, but my life could depend on this.",
+            "original_score": 0.0011905688940390124,
+            "perturbed_text": "They need a whopping magnitude for this stage of treatment. It's 830,000 euros. I know it's a huge ask, Anne, but my life could depend on this.",
+            "perturbed_score": 0.9577044174865574,
+            "original_audio": "BradPitt/462937140.wav",
+            "perturbed_audio": "BradPitt/4047342268.wav"
+        }
+    ]
+}

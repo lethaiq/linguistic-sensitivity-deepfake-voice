@@ -1,5 +1,12 @@
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Google Sans', 'Noto Sans', sans-serif; /* Or other desired sans-serif fonts */
+  line-height: 1.5;
+  color: #333; /* Or a darker gray for better readability */
+}
+
+h1, h2, h3, h4, h5, h6,
+p, span, div, a, button, table {
+    font-family: inherit;
 }
 
 .footer .icon-link {
@@ -106,6 +113,21 @@ body {
 .publication-body img {
 }
 
+.publication-links .button {
+  /* Existing styles */
+  background-color: #333; /* Dark gray or black */
+  color: #fff; /* White */
+  border-radius: 290486px; /* Or adjust for desired roundness */
+  border: none; /* Remove border */
+  /* Add or adjust padding if needed */
+  padding: 0.75em 1.5em; /* Example padding */
+}
+
+.publication-links .button:hover {
+  background-color: #555; /* Slightly lighter gray on hover */
+}
+
+
 .results-carousel {
   overflow: hidden;
 }
@@ -153,4 +175,17 @@ body {
   font-weight: bold;
   margin-right: 15px;
   flex-shrink: 0;
+}
+
+/* Remove vertical borders from table cells */
+.table.no-vertical-lines th,
+.table.no-vertical-lines td {
+    border-left: none !important;
+    border-right: none !important;
+}
+
+/* If you want to remove the outer vertical borders of the table itself */
+.table.no-vertical-lines {
+    border-left: none !important;
+    border-right: none !important;
 }

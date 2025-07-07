@@ -1,0 +1,110 @@
+    <section class="section hero">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Acoustic Examples</h2>
+              <div
+                class="chat-container"
+                style="max-width: 800px; margin: 0 auto; padding: 20px"
+              >
+                <!-- Chat Message 1 - Left Side (Positive Audio) -->
+                <div
+                  class="chat-message"
+                  style="
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-bottom: 20px;
+                  "
+                >
+                  <div
+                    class="user-avatar"
+                    style="background: #ff416c; margin-right: 15px"
+                  >
+                    Fraud
+                  </div>
+                  <div class="message-bubble" style="background-color: #ffeaea">
+                    <audio controls="" style="width: 100%; max-width: 300px">
+                      <source
+                        src="./static/audio/emotion_consistency/sample_0_0.wav"
+                      />
+                    </audio>
+                  </div>
+                </div>
+
+                <!-- Chat Message 2 - Right Side (Negative Audio) -->
+                <div
+                  class="chat-message"
+                  style="
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-bottom: 20px;
+                  "
+                >
+                  <div class="message-bubble" style="background-color: #e8f4f8">
+                    <audio controls="" style="width: 100%; max-width: 300px">
+                      <source
+                        src="./static/audio/emotion_consistency/sample_0_1.wav"
+                      />
+                    </audio>
+                  </div>
+                  <div
+                    class="user-avatar"
+                    style="background: #4facfe; margin-left: 15px"
+                  >
+                    Victim
+                  </div>
+                </div>
+
+                <div
+                  class="chat-message"
+                  style="
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-bottom: 20px;
+                  "
+                >
+                  <div
+                    class="user-avatar"
+                    style="background: #ff416c; margin-right: 15px"
+                  >
+                    Fraud
+                  </div>
+                  <div class="message-bubble" style="background-color: #ffeaea">
+                    <audio controls="" style="width: 100%; max-width: 300px">
+                      <source
+                        src="./static/audio/emotion_consistency/sample_0_0.wav"
+                      />
+                    </audio>
+                  </div>
+                </div>
+
+                <!-- Chat Message 2 - Right Side (Negative Audio) -->
+                <div
+                  class="chat-message"
+                  style="
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-bottom: 20px;
+                  "
+                >
+                  <div class="message-bubble" style="background-color: #e8f4f8">
+                    <audio controls="" style="width: 100%; max-width: 300px">
+                      <source
+                        src="./static/audio/emotion_consistency/sample_0_1.wav"
+                      />
+                    </audio>
+                  </div>
+                  <div
+                    class="user-avatar"
+                    style="background: #4facfe; margin-left: 15px"
+                  >
+                    Victim
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
