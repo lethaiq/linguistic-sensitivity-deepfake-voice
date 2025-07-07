@@ -68,7 +68,19 @@
     <script src="static/js/bulma-slider.min.js"></script>
     <script src="static/js/index.js"></script>
 
-    <style>
+        <style>
+      /* General body style to prevent horizontal overflow */
+      body {
+        overflow-x: hidden;
+      }
+
+      /* Ensure all elements stay within the viewport width */
+      * {
+          max-width: 100%;
+          box-sizing: border-box; /* Include padding and border in element's total width */
+      }
+
+
       /* Add some basic responsiveness for smaller screens */
       @media (max-width: 768px) {
         .publication-title {
@@ -80,22 +92,29 @@
         .title.is-3 {
           font-size: 1.2rem !important; /* Smaller section titles */
         }
+
         /* Make tables horizontally scrollable */
         .table-scrollable-wrapper {
           overflow-x: auto;
           -webkit-overflow-scrolling: touch; /* Improve scrolling on iOS */
         }
+
         /* Ensure tables inside the wrapper don't overflow their parent naturally */
         .table-scrollable-wrapper table {
             width: auto; /* Allow table width to be determined by content */
             min-width: 100%; /* Ensure it at least takes full width if small */
         }
+
+         /* Prevent text wrapping in standard table cells */
+         /* (This might be overridden for specific cells below) */
          .table-scrollable-wrapper td,
         .table-scrollable-wrapper th {
-            white-space: nowrap; /* Prevent text wrapping in cells */
+            white-space: nowrap;
         }
+
+        /* Reduce audio player size */
         .table-scrollable-wrapper audio {
-            min-width: 100px; /* Reduce audio player size */
+            min-width: 100px;
             width: 100px;
         }
 
@@ -123,8 +142,6 @@
              min-width: 80px;
              width: 80px;
         }
-
-
       }
     </style>
   </head>
