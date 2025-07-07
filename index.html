@@ -68,6 +68,65 @@
     <script src="static/js/bulma-slider.min.js"></script>
     <script src="static/js/index.js"></script>
 
+    <style>
+      /* Add some basic responsiveness for smaller screens */
+      @media (max-width: 768px) {
+        .publication-title {
+          font-size: 1.5rem !important; /* Smaller title */
+        }
+        .is-size-5 {
+          font-size: 1rem !important; /* Smaller author/abstract text */
+        }
+        .title.is-3 {
+          font-size: 1.2rem !important; /* Smaller section titles */
+        }
+        /* Make tables horizontally scrollable */
+        .table-scrollable-wrapper {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch; /* Improve scrolling on iOS */
+        }
+        /* Ensure tables inside the wrapper don't overflow their parent naturally */
+        .table-scrollable-wrapper table {
+            width: auto; /* Allow table width to be determined by content */
+            min-width: 100%; /* Ensure it at least takes full width if small */
+        }
+         .table-scrollable-wrapper td,
+        .table-scrollable-wrapper th {
+            white-space: nowrap; /* Prevent text wrapping in cells */
+        }
+        .table-scrollable-wrapper audio {
+            min-width: 100px; /* Reduce audio player size */
+            width: 100px;
+        }
+
+        /* Adjust padding and margin for smaller screens */
+        .section {
+          padding: 1rem;
+        }
+        .hero-body {
+          padding: 1rem;
+        }
+
+         /* Adjust Brad Pitt table-specific styles for mobile */
+        #brad-pitt-examples-container .table-scrollable-wrapper table td {
+            /* Allow some wrapping for longer text like victim sentences */
+             white-space: normal;
+        }
+        #brad-pitt-examples-container .table-scrollable-wrapper table td:first-child,
+        #brad-pitt-examples-container .table-scrollable-wrapper table td:nth-child(4) {
+            /* Give more space to text columns */
+             min-width: 150px;
+        }
+         #brad-pitt-examples-container .table-scrollable-wrapper table td:nth-child(2),
+         #brad-pitt-examples-container .table-scrollable-wrapper table td:nth-child(5) {
+             /* Narrower columns for probability */
+             min-width: 80px;
+             width: 80px;
+        }
+
+
+      }
+    </style>
   </head>
   <body>
     <!-- Title, and authors -->
@@ -238,13 +297,16 @@
             </div>
 
             <div id="open-source-table-container" style="margin-top: 20px;">
-              <!-- Table will be loaded here by JavaScript -->
-              <div class="has-text-centered">
-                <div class="button is-loading is-medium">Loading...</div>
+              <!-- Added wrapper for horizontal scrolling -->
+              <div class="table-scrollable-wrapper">
+                <!-- Table will be loaded here by JavaScript -->
+                <div class="has-text-centered">
+                  <div class="button is-loading is-medium">Loading...</div>
+                </div>
               </div>
             </div>
 
-            <p id="open-source-note" class="is-size-6 has-text-centered" style="margin-bottom: 30px;">
+            <p id="open-source-note" class="is-size-6 has-text-centered" style="margin-bottom: 30px; display: none;">
               <strong>Table 1</strong>: Bold values indicate the TTS-voice pair that is most effective at
               attacking (ASR) each detector model.
             </p>
@@ -280,14 +342,14 @@
               </p>
             </div>
 
-
             <div id="commercial-table-container" style="margin-top: 20px;">
-              <!-- Table will be loaded here by JavaScript -->
-              <div class="has-text-centered">
-                <div class="button is-loading is-medium">Loading...</div>
+               <!-- Added wrapper for horizontal scrolling -->
+               <div class="table-scrollable-wrapper">
+                <!-- Table will be loaded here by JavaScript -->
+                <div class="has-text-centered">
+                  <div class="button is-loading is-medium">Loading...</div>
+                </div>
               </div>
-
-
             </div>
             <p class="is-size-6 has-text-centered" style="margin-bottom: 30px;">
                 <strong>Table 2</strong>: This table presents the attack success rates of commercial anti-spoofing detectors against various Text-to-Speech systems, highlighting their real-world vulnerabilities.
@@ -303,15 +365,18 @@
         <div class="hero-body">
             <div class="container is-max-desktop">
                 <h2 class="title is-3 has-text-centered has-text-link">Brad Pitt Deepfake Scam Case Study</h2>
-                
+
                 <p style="margin-top: 20px; margin-bottom: 20px; text-align: justify;">
                     This case study on a simulated Brad Pitt deepfake scam demonstrates how minor linguistic changes in the transcript can dramatically increase a fake audio's detection probability as real. The results highlight that even state-of-the-art commercial detectors are vulnerable to these transcript-level adversarial attacks, posing a significant real-world risk. Crucially, these attacks can succeed even if the altered wording is slightly unnatural or grammatically imperfect.
                 </p>
 
                 <div id="brad-pitt-examples-container">
+                    <!-- Added wrapper for horizontal scrolling -->
+                    <div class="table-scrollable-wrapper">
                     <!-- Examples will be loaded here by JavaScript -->
                     <div class="has-text-centered">
                       <div class="button is-loading is-medium">Loading...</div>
+                    </div>
                     </div>
                 </div>
                 <p class="is-size-6 has-text-centered" style="margin-bottom: 30px;">
@@ -364,44 +429,46 @@
             </ul>
 
             <h3 class="title is-4 has-text-centered has-text-info" style="margin-top: 40px; margin-bottom: 20px;">Logistic Regression Analysis Results</h3>
-            <table class="table is-bordered is-striped is-hoverable is-fullwidth no-vertical-lines">
-              <thead>
-                <tr class="has-background-info-light has-text-white">
-                  <th class="has-text-centered">Feature</th>
-                  <th class="has-text-centered">coef</th>
-                  <th class="has-text-centered">std err</th>
-                  <th class="has-text-centered">z</th>
-                  <th class="has-text-centered">P>|z|</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- Separator Row -->
-                <tr class="has-background-light"><td colspan="5" class="has-text-centered has-text-weight-bold">Linguistic Features</td></tr>
-                <!-- Linguistic Features -->
-                <tr><td>Perturbed Percentage</td><td class="has-text-centered">-0.3507</td><td class="has-text-centered">0.009</td><td class="has-text-centered">-39.31</td><td class="has-text-centered">0.000</td></tr>
-                <tr><td>▲ Readability</td><td class="has-text-centered">0.0352</td><td class="has-text-centered">0.007</td><td class="has-text-centered">4.69</td><td class="has-text-centered">0.000</td></tr>
-                <tr><td>▲ PPL</td><td class="has-text-centered">0.0758</td><td class="has-text-centered">0.009</td><td class="has-text-centered">8.48</td><td class="has-text-centered">0.000</td></tr>
-                <tr><td>▲ Syntactic Complexity</td><td class="has-text-centered">0.0125</td><td class="has-text-centered">0.007</td><td class="has-text-centered">1.76</td><td class="has-text-centered">0.077</td></tr>
-                
-                <!-- Separator Row -->
-                <tr class="has-background-light"><td colspan="5" class="has-text-centered has-text-weight-bold">Acoustic Features</td></tr>
-                <!-- Acoustic Features -->
-                <tr><td>▲ Duration</td><td class="has-text-centered">0.0748</td><td class="has-text-centered">0.008</td><td class="has-text-centered">8.89</td><td class="has-text-centered">0.000</td></tr>
-                <tr><td>DTW Distance</td><td class="has-text-centered">0.2063</td><td class="has-text-centered">0.008</td><td class="has-text-centered">26.73</td><td class="has-text-centered">0.000</td></tr>
-                <tr><td>▲ Phoneme PPL</td><td class="has-text-centered">-0.0112</td><td class="has-text-centered">0.007</td><td class="has-text-centered">-1.54</td><td class="has-text-centered">0.122</td></tr>
-                <tr><td>▲ Content Enjoyment</td><td class="has-text-centered">0.0536</td><td class="has-text-centered">0.013</td><td class="has-text-centered">4.18</td><td class="has-text-centered">0.000</td></tr>
-                <tr><td>▲ Content Usefulness</td><td class="has-text-centered">0.0679</td><td class="has-text-centered">0.021</td><td class="has-text-centered">3.17</td><td class="has-text-centered">0.001</td></tr>
-                <tr><td>▲ Production Complexity</td><td class="has-text-centered">0.0110</td><td class="has-text-centered">0.010</td><td class="has-text-centered">1.12</td><td class="has-text-centered">0.264</td></tr>
-                <tr><td>▲ Production Quality</td><td class="has-text-centered">0.0307</td><td class="has-text-centered">0.017</td><td class="has-text-centered">1.82</td><td class="has-text-centered">0.069</td></tr>
-                
-                <!-- Separator Row -->
-                <tr class="has-background-light"><td colspan="5" class="has-text-centered has-text-weight-bold">Model-Level Features</td></tr>
-                <!-- Model-Level Features -->
-                <tr><td>Audio Encoder Similarity</td><td class="has-text-centered">-0.9013</td><td class="has-text-centered">0.011</td><td class="has-text-centered">-81.60</td><td class="has-text-centered">0.000</td></tr>
-                <tr><td>Spoof F1</td><td class="has-text-centered">3.1254</td><td class="has-text-centered">0.159</td><td class="has-text-centered">19.60</td><td class="has-text-centered">0.000</td></tr>
-                <tr><td>Bona-fide F1</td><td class="has-text-centered">-2.5911</td><td class="has-text-centered">0.159</td><td class="has-text-centered">-16.25</td><td class="has-text-centered">0.000</td></tr>
-              </tbody>
-            </table>
+             <div class="table-scrollable-wrapper">
+                <table class="table is-bordered is-striped is-hoverable is-fullwidth no-vertical-lines">
+                  <thead>
+                    <tr class="has-background-info-light has-text-white">
+                      <th class="has-text-centered">Feature</th>
+                      <th class="has-text-centered">coef</th>
+                      <th class="has-text-centered">std err</th>
+                      <th class="has-text-centered">z</th>
+                      <th class="has-text-centered">P>|z|</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Separator Row -->
+                    <tr class="has-background-light"><td colspan="5" class="has-text-centered has-text-weight-bold">Linguistic Features</td></tr>
+                    <!-- Linguistic Features -->
+                    <tr><td>Perturbed Percentage</td><td class="has-text-centered">-0.3507</td><td class="has-text-centered">0.009</td><td class="has-text-centered">-39.31</td><td class="has-text-centered">0.000</td></tr>
+                    <tr><td>▲ Readability</td><td class="has-text-centered">0.0352</td><td class="has-text-centered">0.007</td><td class="has-text-centered">4.69</td><td class="has-text-centered">0.000</td></tr>
+                    <tr><td>▲ PPL</td><td class="has-text-centered">0.0758</td><td class="has-text-centered">0.009</td><td class="has-text-centered">8.48</td><td class="has-text-centered">0.000</td></tr>
+                    <tr><td>▲ Syntactic Complexity</td><td class="has-text-centered">0.0125</td><td class="has-text-centered">0.007</td><td class="has-text-centered">1.76</td><td class="has-text-centered">0.077</td></tr>
+
+                    <!-- Separator Row -->
+                    <tr class="has-background-light"><td colspan="5" class="has-text-centered has-text-weight-bold">Acoustic Features</td></tr>
+                    <!-- Acoustic Features -->
+                    <tr><td>▲ Duration</td><td class="has-text-centered">0.0748</td><td class="has-text-centered">0.008</td><td class="has-text-centered">8.89</td><td class="has-text-centered">0.000</td></tr>
+                    <tr><td>DTW Distance</td><td class="has-text-centered">0.2063</td><td class="has-text-centered">0.008</td><td class="has-text-centered">26.73</td><td class="has-text-centered">0.000</td></tr>
+                    <tr><td>▲ Phoneme PPL</td><td class="has-text-centered">-0.0112</td><td class="has-text-centered">0.007</td><td class="has-text-centered">-1.54</td><td class="has-text-centered">0.122</td></tr>
+                    <tr><td>▲ Content Enjoyment</td><td class="has-text-centered">0.0536</td><td class="has-text-centered">0.013</td><td class="has-text-centered">4.18</td><td class="has-text-centered">0.000</td></tr>
+                    <tr><td>▲ Content Usefulness</td><td class="has-text-centered">0.0679</td><td class="has-text-centered">0.021</td><td class="has-text-centered">3.17</td><td class="has-text-centered">0.001</td></tr>
+                    <tr><td>▲ Production Complexity</td><td class="has-text-centered">0.0110</td><td class="has-text-centered">0.010</td><td class="has-text-centered">1.12</td><td class="has-text-centered">0.264</td></tr>
+                    <tr><td>▲ Production Quality</td><td class="has-text-centered">0.0307</td><td class="has-text-centered">0.017</td><td class="has-text-centered">1.82</td><td class="has-text-centered">0.069</td></tr>
+
+                    <!-- Separator Row -->
+                    <tr class="has-background-light"><td colspan="5" class="has-text-centered has-text-weight-bold">Model-Level Features</td></tr>
+                    <!-- Model-Level Features -->
+                    <tr><td>Audio Encoder Similarity</td><td class="has-text-centered">-0.9013</td><td class="has-text-centered">0.011</td><td class="has-text-centered">-81.60</td><td class="has-text-centered">0.000</td></tr>
+                    <tr><td>Spoof F1</td><td class="has-text-centered">3.1254</td><td class="has-text-centered">0.159</td><td class="has-text-centered">19.60</td><td class="has-text-centered">0.000</td></tr>
+                    <tr><td>Bona-fide F1</td><td class="has-text-centered">-2.5911</td><td class="has-text-centered">0.159</td><td class="has-text-centered">-16.25</td><td class="has-text-centered">0.000</td></tr>
+                  </tbody>
+                </table>
+            </div>
             <p class="is-size-6 has-text-centered" style="margin-bottom: 30px;">
               <strong>Table 4</strong>: Logistic regression feature analysis for bona-fide detection on adversarial samples. ▲ is the difference and Semantic Similarity feature is removed due to the high Variance Inflation Factor to avoid multicollinearity.
             </p>
@@ -626,7 +693,7 @@
             <th class="has-text-centered">COS↑</th>
           </tr>
         `;
-        
+
         // Create body
         const tbody = document.createElement('tbody');
         let currentCategory = ''; // Track the current TTS category for Open-Source
@@ -712,31 +779,30 @@
       function loadTables() {
         try {
           // Load Open-Source table
-          const openSourceContainer = document.getElementById('open-source-table-container');
+          const openSourceContainer = document.getElementById('open-source-table-container').querySelector('.table-scrollable-wrapper'); // Select the wrapper
           const openSourceTable = createOpenSourceTable(openSourceData);
           openSourceContainer.innerHTML = '';
           openSourceContainer.appendChild(openSourceTable);
-          
+
           // Show the note
           document.getElementById('open-source-note').style.display = 'block';
-          
+
           // Load Commercial table
-          const commercialContainer = document.getElementById('commercial-table-container');
+          const commercialContainer = document.getElementById('commercial-table-container').querySelector('.table-scrollable-wrapper'); // Select the wrapper
           const commercialTable = createCommercialTable(commercialData);
           commercialContainer.innerHTML = '';
           commercialContainer.appendChild(commercialTable);
 
-          const bradPittContainer = document.getElementById('brad-pitt-examples-container');
+          const bradPittContainer = document.getElementById('brad-pitt-examples-container').querySelector('.table-scrollable-wrapper'); // Select the wrapper
           const bradPittTable = createBradPittTable(brad_pitt);
           bradPittContainer.innerHTML = '';
           bradPittContainer.appendChild(bradPittTable);
-            
-          
+
         } catch (error) {
           console.error('Error loading tables:', error);
-          document.getElementById('open-source-table-container').innerHTML = '<div class="notification is-danger">Error loading table data</div>';
-          document.getElementById('commercial-table-container').innerHTML = '<div class="notification is-danger">Error loading table data</div>';
-          document.getElementById('brad-pitt-examples-container').innerHTML = '<div class="notification is-danger">Error loading Brad Pitt examples</div>';
+          document.getElementById('open-source-table-container').querySelector('.table-scrollable-wrapper').innerHTML = '<div class="notification is-danger">Error loading table data</div>';
+          document.getElementById('commercial-table-container').querySelector('.table-scrollable-wrapper').innerHTML = '<div class="notification is-danger">Error loading table data</div>';
+          document.getElementById('brad-pitt-examples-container').querySelector('.table-scrollable-wrapper').innerHTML = '<div class="notification is-danger">Error loading Brad Pitt examples</div>';
         }
       }
 
